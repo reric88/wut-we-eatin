@@ -14,7 +14,7 @@ function shuffle(array){
 }
 
 function spin(){
-    WheelEvent.play();
+    wheel.play();
     const box = document.getElementById("box");
     const element = document.getElementById("main-box");
     let SelectedItem = "";
