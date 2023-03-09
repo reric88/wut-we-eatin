@@ -3,7 +3,7 @@ function shuffle(array){
     randomIndex;
 
     while(0 !== currentIndex) {
-        randomIndex = math.floor(math.random() * currentIndex);
+        randomIndex = Math.floor(Math.random() * currentIndex);
         currentIndex--;
         [array[currentIndex], array[randomIndex]] = [
             array[currentIndex],
@@ -14,7 +14,7 @@ function shuffle(array){
 }
 
 function spin(){
-    wheel.play();
+    wheels.play();
     const box = document.getElementById("box");
     const element = document.getElementById("main-box");
     let SelectedItem = "";
@@ -38,14 +38,6 @@ function spin(){
         sbarros[0],
         jimmy[0]
     ]);
-
-    // if(cheesecake.includes(results[0])) SelectedItem = "Cheesecake Factory";
-    // if(chicfila.includes(results[0])) SelectedItem = "Chic-Fil-A";
-    // if(where.includes(results[0])) SelectedItem = "Anywhere is fine.";
-    // if(wendys.includes(results[0])) SelectedItem = "Wendy's";
-    // if(texas.includes(results[0])) SelectedItem = "Texas Roadhouse";
-    // if(sbarros.includes(results[0])) SelectedItem = "Sbarro's";
-    // if(jimmy.includes(results[0])) SelectedItem = "Jimmy John's";
 
     if(cheesecake.includes(results[0])) SelectedItem = "I don't want Cheesecake Factory";
     if(chicfila.includes(results[0])) SelectedItem = "I don't want Chic-Fil-A";
