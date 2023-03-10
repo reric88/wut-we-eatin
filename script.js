@@ -39,13 +39,13 @@ function spin(){
         jimmy[0]
     ]);
 
-    if(cheesecake.includes(results[0])) SelectedItem = "I don't want Cheesecake Factory";
-    if(chicfila.includes(results[0])) SelectedItem = "I don't want Chic-Fil-A";
+    if(cheesecake.includes(results[0])) SelectedItem = "Cheesecake Factory?";
+    if(chicfila.includes(results[0])) SelectedItem = "Chic-Fil-A?";
     if(where.includes(results[0])) SelectedItem = "Anywhere is fine.";
-    if(wendys.includes(results[0])) SelectedItem = "I don't want Wendy's";
-    if(texas.includes(results[0])) SelectedItem = "I don't want Texas Roadhouse";
-    if(sbarros.includes(results[0])) SelectedItem = "I don't want Sbarro's";
-    if(jimmy.includes(results[0])) SelectedItem = "I don't want Jimmy John's";
+    if(wendys.includes(results[0])) SelectedItem = "Wendy's?";
+    if(texas.includes(results[0])) SelectedItem = "Texas Roadhouse?";
+    if(sbarros.includes(results[0])) SelectedItem = "Sbarro's?";
+    if(jimmy.includes(results[0])) SelectedItem = "Jimmy John's?";
 
     box.style.setProperty("transition", "all ease 5s");
     box.style.transform = "rotate(" + results[0] + "deg)";
@@ -57,8 +57,12 @@ function spin(){
     }, 5000);
 
     setTimeout(function(){
-            // alert
-    })
+        aww.play();
+        Swal.fire(
+            SelectedItem,
+            'I dont really want ' + SelectedItem + '...',
+          )
+    }, 5500)
 
     setTimeout(function(){
         box.style.setProperty("transition", "initial");
