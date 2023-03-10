@@ -78,7 +78,7 @@ span {
     box-shadow:inset 10px 80px 90px 30px #000000;
 
 }
-.span2 {
+.box1 .span2 {
     clip-path: polygon(0 17%, 30% 0, 50% 50%);
     background-color: rgb(185, 69, 69);
     box-shadow:inset 50px 50px 90px 30px #000000;
@@ -113,8 +113,20 @@ span {
 }
 
 .box2 .span1 {
-    background-color: darkgray;
+    
+    /* clip-path: polygon(30% 0%, 0% 50%, 50% 50%); */
+    clip-path: path('M 0 244 L 0,00 A 50,50 0,0,1 250,75 L 250 244 z');
+    background-color: rgb(126, 126, 126);
+    box-shadow:inset 50px 50px 90px 30px #000000;
 }
+
+/* .box2 .span1 {
+    background-color: darkgray;
+} */
+
+/* .box2 .span2 {
+    background-color: darkgray;
+} */
 
 .font {
     color: white;
@@ -123,16 +135,16 @@ span {
 
 .box1 .span1 h5 {
     position: absolute;
-    top: 40%;
+    top: 35%;
     right: 63%;
-    transform: rotate(200deg);
+    transform: rotate(196deg);
     text-align: center;
 
 }
 
 .box1 .span2 h5 {
     position: absolute;
-    top: 30%;
+    top: 27%;
     right: 57%;
     transform: rotate(-130deg);
     text-align: center;
@@ -140,25 +152,25 @@ span {
 }
 .box1 .span3 h5 {
     position: absolute;
-    top: 22%;
+    top: 24%;
     right: 13%;
-    transform: rotate(-55deg);
+    transform: rotate(-50deg);
     text-align: center;
 
 }
 .box1 .span4 h5 {
     position: absolute;
-    top: 25%;
-    right: 41%;
+    top: 20%;
+    right: 38%;
     transform: rotate(-90deg);
     text-align: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
 }
 .box1 .span5 h5 {
     position: absolute;
-    top: 42%;
-    right: 20%;
+    top: 40%;
+    right: 13%;
     transform: rotate(-15deg);
     text-align: center;
 
@@ -166,47 +178,47 @@ span {
 
 .box2 .span1 h5 {
     position: absolute;
-    top: 38%;
-    right: 62%;
-    transform: rotate(200deg);
+    top: 35%;
+    right: 61%;
+    transform: rotate(210deg);
     text-align: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
 }
 .box2 .span2 h5 {
     position: absolute;
-    top: 32%;
-    right: 56%;
-    transform: rotate(-130deg);
+    top: 27%;
+    right: 55%;
+    transform: rotate(-140deg);
     text-align: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
 }
 .box2 .span3 h5 {
     position: absolute;
-    top: 31%;
-    right: 29%;
-    transform: rotate(-55deg);
+    top: 25%;
+    right: 18%;
+    transform: rotate(-50deg);
     text-align: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
 }
 .box2 .span4 h5 {
     position: absolute;
-    top: 22%;
-    right: 35%;
+    top: 25%;
+    right: 40%;
     transform: rotate(-90deg);
     text-align: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
 }
 .box2 .span5 h5 {
     position: absolute;
-    top: 41%;
-    right: 15%;
+    top: 39%;
+    right: 5%;
     transform: rotate(-15deg);
     text-align: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
 }
 
